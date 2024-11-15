@@ -1,13 +1,51 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Space Mono", serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 20px;
+  background-image: url(https://img.freepik.com/vector-premium/fondo-elegante-presentaciones-negocios-tecnologia_28976-311.jpg?w=900);
+  background-size: 1600px;
 }
-
+/*titulo principal*/
 h1 {
   text-align: center;
   color: #333;
+  font-size: 40px;
+}
+
+/*cada contenedor por separado*/
+.nuevoli{
+  display: block;
+  width: 320px;/*pte meter foto para ampliar si procede*/
+  height: 170px;
+  padding: 20px;
+  font-size: 8px;
+  background-color: azure;
+  border-style:ridge;
+  border-radius: 5px;
+}
+
+/*negrita encabezados NO FUNCIONA*/
+.bold{
+  font-weight: 3000;
+  text-decoration: dotted;
 }
 
 
+/*contenedor grande (el que contiene todos los usuarios)*/
+#listaUsuarios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:20px;
+}  
+
+.borde{
+  border-style: groove;
+}
+/*
+img{
+  width:100px;
+}
+
+*/
