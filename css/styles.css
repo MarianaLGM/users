@@ -13,40 +13,45 @@ h1 {
   font-size: 40px;
 }
 
-/*cada contenedor por separado*/
-.nuevoli{
-  display: block;
-  width: 300px;/*pte meter foto para ampliar si procede*/
-  height: 170px;
-  padding: 20px;
-  font-size: 8px;
-  background-color: azure;
-  border-style:ridge;
-  border-radius: 5px;
-  
-}
 
 /*negrita encabezados NO FUNCIONA
 .bold{
   font-weight: 3000;
   text-decoration: dotted;
 }*/
-
+/*borde contenedor pequeño*/
+.borde{
+  border-style: groove;
+}
 
 /*contenedor grande (el que contiene todos los usuarios)*/
 #listaUsuarios{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap:20px;
 }  
-
-.borde{
-  border-style: groove;
+ 
+/*cada contenedor pequeño*/
+.nuevoli{
+  display: block;
+  line-height: 10px;
+  width: 300px;
+  height: 220px;
+  padding: 20px;
+  font-size: 8px;
+  background-color: azure;
+  border-style:ridge;
+  border-radius: 5px;
 }
-/*
+
+/*foto usuario*/
 img{
-  width:100px;
+  display:block;
+  margin-left: 230px;
+  margin-top:10px;
+  width:70px;
 }
 
-*/
+
