@@ -70,47 +70,57 @@ Aprovecha para usar:
 
         //HASTA AQUÍ FUNCIONA TDO PERFECTAMENTE REVISAR A PARTIR DE AQUI NO!:
 
+        //numero aleatorio para la edad de los usuarios: 
+        let min = 25;
+        let max = 40;
+    
+        const age = Math.floor(Math.random()*(max - min)+min);
+    
+        console.log("la edad aleatoria es: ", age);
+
 
         const nuevosDatos={
-          Age: age,//hacer referencia a la funcion random
-          img: {
-             imagen:URL="1.jpeg", 
-             imagen:URL="2.jpeg", 
-             imagen:URL="3.jpeg", 
-             imagen:URL="4.jpeg", 
-             imagen:URL="5.jpeg", 
-             imagen:URL="6.jpeg", 
-             imagen:URL="7.jpeg", 
-             imagen:URL="8.jpeg", 
-             imagen:URL="9.jpeg", 
-             imagen:URL="10.jpeg", 
-
-          }
+          Age: age[1],//hace referencia a la funcion random
+              
         } 
-          console.log ("estos son los datos nuevos", nuevosDatos)
-          listaActualizada=(listaUsuarios,nuevosDatos)
-          console.log ("La lista actualizada es ", listaActualizada)
+          //console.log ("estos son los datos nuevos", nuevosDatos)
 
-            //const nuevosUsuarios = Object.assign(contenedorUsuarios, nuevosDatos);
+          listaActualizada=(users,nuevosDatos)
+
+          //console.log ("La lista actualizada es ", listaActualizada)
+
+          const nuevosUsuarios = Object.assign(users, nuevosDatos);
         
-            //console.log ("los nuevos usuarios serían: ", nuevosUsuarios)
+          console.log ("los nuevos usuarios serían: ", nuevosUsuarios)
         
       })
     });
 
-  //numero aleatorio para la edad de los usuarios: 
-    let min = 25;
-    let max = 40;
+    /*Es decir, el primer usuario tiene un id =1 y en la carpeta de assets/img la primera imagen es 1.jpeg
+    Tienes que conseguir que cada imagen se asocie con el id.
+    Tienes que hacer un bucle donde le digas que el user va a tener al imagen de assets/img, 
+    al ser un bucle el primer usuario estará relacionado con la primera imagen y así sucesivamente*/
 
-    const age = Math.floor(Math.random()*(max - min)+min);
+    /*dentro del bucle
 
-    console.log("la edad aleatoria es: ", age);
+puedes generar en una variable cada src de la imagen.
+const imgSrc = ....
+y después dentro del innerHTML usar ese src que se ha generado.
+img src = imgSrc  alt = ....*/
+   
+const imagenSrc=("1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpeg")
+/*
+for (let i=0; i<users.length; i++){
+  if(id=1){
+    return (src="1.jpeg")
+  }else if (id=2){
+    console.log (src="2.jpeg")
+  }
+}
+
+*/
 
 
-
-
-
-  
 
 
 
