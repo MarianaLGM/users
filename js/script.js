@@ -74,7 +74,17 @@ Aprovecha para usar:
         const nuevosDatos={
           Age: age,//hacer referencia a la funcion random
           img: {
-            // imagen:URL="assets/img.jpeg", 
+             imagen:URL="1.jpeg", 
+             imagen:URL="2.jpeg", 
+             imagen:URL="3.jpeg", 
+             imagen:URL="4.jpeg", 
+             imagen:URL="5.jpeg", 
+             imagen:URL="6.jpeg", 
+             imagen:URL="7.jpeg", 
+             imagen:URL="8.jpeg", 
+             imagen:URL="9.jpeg", 
+             imagen:URL="10.jpeg", 
+
           }
         } 
           console.log ("estos son los datos nuevos", nuevosDatos)

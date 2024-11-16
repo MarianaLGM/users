@@ -16,7 +16,7 @@ h1 {
 /*cada contenedor por separado*/
 .nuevoli{
   display: block;
-  width: 320px;/*pte meter foto para ampliar si procede*/
+  width: 300px;/*pte meter foto para ampliar si procede*/
   height: 170px;
   padding: 20px;
   font-size: 8px;
@@ -25,11 +25,11 @@ h1 {
   border-radius: 5px;
 }
 
-/*negrita encabezados NO FUNCIONA*/
+/*negrita encabezados NO FUNCIONA
 .bold{
   font-weight: 3000;
   text-decoration: dotted;
-}
+}*/
 
 
 /*contenedor grande (el que contiene todos los usuarios)*/
