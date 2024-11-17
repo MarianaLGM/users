@@ -56,8 +56,6 @@ Aprovecha para usar:
         const contenedorUsuarios =document.createElement("li")//creo un li para meter toda la info de los usuarios menos dirección y compañia que van en otro contenedor
         contenedorUsuarios.classList.add ("nuevoli")
 
-        const imagenSrc=`assets/img/${elements.id}.jpeg` //para asociar foto al id usuario
-
       //numero aleatorio para la edad de los usuarios: 
         let min = 25;
         let max = 40;
@@ -65,7 +63,7 @@ Aprovecha para usar:
         const age= edadUsuario
 
         contenedorUsuarios.innerHTML = `
-          <img src="${imagenSrc}" alt="Imagen de ${elements.name}" />
+        
           <h3>Nombre: ${elements.name}</3>
           <h3>Edad: ${age}</3>
           <h3>Username: ${elements.username}</3>
@@ -75,9 +73,16 @@ Aprovecha para usar:
           <h3>Dirección: ${elements.address.street}, ${elements.address.suite}, ${elements.address.city}</3>          
         `;
         
-        listaUsuarios.appendChild (contenedorUsuarios);
+        const contenedorFoto =document.createElement("div")
+        contenedorFoto.classList.add ("nuevoDiv")
+        const imagenSrc=`assets/img/${elements.id}.jpeg` //para asociar foto al id usuario
+        contenedorFoto.innerHTML = `
+        <img src="${imagenSrc}" alt="Imagen de ${elements.name}" />
+         `;
 
-      
+        listaUsuarios.appendChild (contenedorUsuarios);
+        listaUsuarios.appendChild (contenedorFoto);
+
       })
     });
 

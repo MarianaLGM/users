@@ -14,31 +14,22 @@ h1 {
 }
 
 
-/*negrita encabezados NO FUNCIONA
+/*negrita encabezados NO FUNCIONA}*/
 .bold{
   font-weight: 3000;
-  text-decoration: dotted;
-}*/
+  
+}
 /*borde contenedor pequeño*/
 .borde{
   border-style: groove;
 }
-
-/*contenedor grande (el que contiene todos los usuarios)*/
-#listaUsuarios{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap:20px;
-}  
  
 /*cada contenedor pequeño*/
 .nuevoli{
   display: block;
   line-height: 10px;
-  width: 300px;
-  height: 220px;
+  width: 310px;
+  height: 140px;
   padding: 20px;
   font-size: 8px;
   background-color: azure;
@@ -48,10 +39,25 @@ h1 {
 
 /*foto usuario*/
 img{
-  display:block;
   margin-left: 230px;
   margin-top:10px;
   width:70px;
+  border: solid 0.5px black;
+}
+/*contenedor foto*/
+.nuevoDiv{
+  display: block;
+  position: relative;
+  right: 360px;
+  width: 300px;
+  height: 160px;  
 }
 
+/*contenedor grande (el que contiene todos los usuarios)*/
+#listaUsuarios{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap:20px;
+}  
 
