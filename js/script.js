@@ -42,7 +42,7 @@ Aprovecha para usar:
 
     const listaUsuarios= document.getElementById ("listaUsuarios");//ul html
     fetch ("https://jsonplaceholder.typicode.com/users")
-      .then ((response)=>{
+      .then ((response)=>{ //response podemos poner el nombre qu queramos
         if(!response.ok){
             throw new Error ("No se puede cargar info")
         }
@@ -50,7 +50,6 @@ Aprovecha para usar:
       })
       .then (function (users){ 
         //console.log("users", users)
-
    
     users.forEach((elements) => {// me traigo los datos que quiero mostrar de cada usuario a una nueva variable (li):
         const contenedorUsuarios =document.createElement("li")//creo un li para meter toda la info de los usuarios menos dirección y compañia que van en otro contenedor
@@ -84,15 +83,26 @@ Aprovecha para usar:
         listaUsuarios.appendChild (contenedorFoto);
 
       })
-    });
+    })
 
+    .catch ((error)=> {
+      console.log ("error Fetch users")
+    })
     
 
+/*
+//otra manera de hacer lo de los datos utilizando el desestructuring
 
+const {street, suite, city}=usuario.address;
+const address=`${street},${suite},${city}`;
+return {
+  ...usuario,
+  edad,
+  img,
+  address
+}
 
-
-
-
+*/
 
 
 
